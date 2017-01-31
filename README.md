@@ -25,5 +25,8 @@ COPY /sites-enabled/vhost.conf /etc/apache2/sites-available/example.com.conf
 Change your DocumentRoot to 
 ``` /var/www/html/yourproject ```  and Directory to ``` /var/www/html/yourproject ```
 
+## Run
+``` sh start_server.sh ```
+
 
 

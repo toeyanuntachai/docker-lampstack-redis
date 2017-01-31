@@ -17,10 +17,13 @@ Edit the following file
 
 ## Dockerfile
 Change example.con.conf to yourhostname.conf
+```
 COPY /sites-enabled/vhost.conf /etc/apache2/sites-available/example.com.conf
+```
     
 ##vhost.conf
-Change your DocumentRoot to /var/www/html/yourproject and Directory to /var/www/html/yourproject
+Change your DocumentRoot to 
+``` /var/www/html/yourproject ```  and Directory to ``` /var/www/html/yourproject ```
 
 
 

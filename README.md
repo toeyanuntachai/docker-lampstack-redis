@@ -3,6 +3,7 @@
 Edit the following file
  - docker-compose
  - web/sites-enabled/vhost.conf
+ - web/Dockerfile
  
  ## docker-compose
  
@@ -13,6 +14,10 @@ Edit the following file
     
  extra_hosts:
     - "example.local:127.0.0.1"
+
+## Dockerfile
+Change example.con.conf to yourhostname.conf
+COPY /sites-enabled/vhost.conf /etc/apache2/sites-available/example.com.conf
     
 ##vhost.conf
 Change your DocumentRoot to /var/www/html/yourproject and Directory to /var/www/html/yourproject

@@ -10,10 +10,10 @@ Edit the following file
  Change path to your localpath and set your hostname
  
  volumes:
-    - /localPath:/var/www/html/
+   ``` - /localPath:/var/www/html/ ```
     
  extra_hosts:
-    - "example.local:127.0.0.1"
+   ``` - "example.local:127.0.0.1" ```
 
 ## Dockerfile
 Change example.con.conf to yourhostname.conf

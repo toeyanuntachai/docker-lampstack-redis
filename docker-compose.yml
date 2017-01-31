@@ -1,0 +1,27 @@
+web_server:
+  build: web/
+  tty: true
+  ports:
+    - "80:80"
+  container_name: web_server
+  volumes:
+    - /localPath:/var/www/html/
+  extra_hosts:
+    - "example.local:127.0.0.1"
+  links:
+    - mysql_server:mysql
+    - redis_server:alpine
+
+mysql_server:
+  build: mysql/
+  ports:
+    - "3306:3306"
+  container_name: mysql_server
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+
+redis_server:
+  build: redis/
+  ports:
+    - "6379:6379"
+  container_name: redis_server

@@ -5,15 +5,14 @@ Edit the following file
  - web/sites-enabled/vhost.conf
  - web/Dockerfile
  
- ## docker-compose
+##docker-compose
+Change path to your localpath and set your hostname
  
- Change path to your localpath and set your hostname
- 
- volumes:
-   ``` - /localPath:/var/www/html/ ```
+volumes:
+  ``` - /localPath:/var/www/html/ ```
     
- extra_hosts:
-   ``` - "example.local:127.0.0.1" ```
+extra_hosts:
+  ``` - "example.local:127.0.0.1" ```
 
 ## Dockerfile
 Change example.con.conf to yourhostname.conf
